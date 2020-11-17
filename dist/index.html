@@ -9,10 +9,120 @@
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar__list">
+            <li class="navbar__item"><span>О гидроспецгеологии</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <a href="#">Миссия</a></li>
+                <li class="navbar__menu-item"> <span>Деятельность
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span></li>
+                <li class="navbar__menu-item"> <a href="#">История</a></li>
+                <li class="navbar__menu-item"> <a href="#">Руководство</a></li>
+                <li class="navbar__menu-item"> <span>Центры компетенции
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="#">Центр ГМСН и РР</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Центр ОМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Центр СГР</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <span>Закупки
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span></li>
+                <li class="navbar__menu-item"> <a href="#">Ведомости результатов проведения СОУТ</a></li>
+                <li class="navbar__menu-item"> <a href="#">Структура</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><span>Мониторинг состояния недр</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <span>Государственный мониторинг недр (ГМСН)
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="#">Регламентная продукция Центра ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Информационный бюллетень о состоянии недр на территории РФ</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Информационные бюллетени о состоянии недр федеральных округов</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Интерактивная карта ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Макет програмного модуля ИАС ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Система сбора и накопления данных ГГД-поля</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Нормативно-правовые акты ведения государственного мониторинга состояния недр</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Средне и мелкомасштабная съемки</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="#">Объектный мониторинг состояния недр (ОМСН)</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a href="#">Терретория присутствия</a></li>
+            <li class="navbar__item"><span>пресс-центр</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <span>События
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="#">Новости компании</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Новости отрасли</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <span>Медиатека
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="#">Фотогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Видеогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Фирменный стиль</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="#">Контакты для СМИ</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a href="#">Контакты</a></li>
+            <li class="navbar__item" id="search">
+              <button> 
+                <svg>
+                  <use href="img/sprites/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="navbar__search">
+            <input type="text" required>
+            <button class="btn">Найти</button><span>
+              <svg>
+                <use href="img/sprites/sprite.svg#search"></use>
+              </svg></span>
+          </div>
+        </div>
+      </nav>
+      <div class="header__row">
+        <div class="container"><a class="logo" href="index.html"> <img src="img/logo/logo.png" alt="Логотип сайта" title="ГидроСпецГеология"><b>Гидроспецгеология</b></a>
+          <div class="header__links"><a href="#">
+              <div class="header__links-img"><img src="img/header/karta.png" alt="Карта РФ"></div><b>Территория <br> присутствия</b></a><a href="#">
+              <div class="header__links-img"><img src="img/header/kaplya.png" alt="Капля воды"></div><b>виды <br> деятельности</b></a></div>
+          <div class="header__victory"><img src="img/header/75let.png" alt="75 лет. Победа 1945-2020" title="75 лет победе над фашизмом!"></div>
+          <div class="header__contacts"><a href="#" title="Instagram">
+              <svg>
+                <use href="img/sprites/sprite.svg#i-instagram"></use>
+              </svg></a><a href="#" title="Facebook">
+              <svg>
+                <use href="img/sprites/sprite.svg#i-facebook"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__left"><a class="logo" href="index.html"><img src="img/logo/logo-w.png" alt="Лого сайта" title="ГидроСпецГеология"></a>
+        <div class="footer__left"><a class="logo" href="index.html"><img src="img/logo/logo-w.png" alt="Логотип сайта" title="ГидроСпецГеология"></a>
           <div class="footer__left-text">
             <div class="footer__title"><strong>Гидроспецгеология</strong><b>Министерство природных ресурсов и экологии Российской Федерации  /  Федеральное агентство по недропользованию  / Федеральное государственное бюджетное учреждение</b></div>
             <ul class="footer__copyright">
@@ -48,8 +158,8 @@
               </svg>
             </button>
           </div><a class="footer__partner" href="#">
-            <div class="footer__partner-img"><img src="img/footer/planet.png" alt="Планета"></div><span>Министерство природных <br> ресурсов и экологии <br> Российской Федерации</span></a><a class="footer__partner" href="#">
-            <div class="footer__partner-img"><img src="img/footer/emblem.png" alt="Герб РФ"></div><span>Федеральное агенство <br> по недропользованию - РосНедра</span></a>
+            <div class="footer__partner-img"><img src="img/footer/planeta.png" alt="Планета"></div><span>Министерство природных <br> ресурсов и экологии <br> Российской Федерации</span></a><a class="footer__partner" href="#">
+            <div class="footer__partner-img"><img src="img/footer/gerb.png" alt="Герб РФ"></div><span>Федеральное агенство <br> по недропользованию - РосНедра</span></a>
         </div>
       </div>
     </footer>
