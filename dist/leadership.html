@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Миссия - Гидроспецгеология</title>
+    <title>Руководство - Гидроспецгеология</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
     <header class="header">
@@ -21,15 +21,15 @@
                       <use href="img/sprites/sprite.svg#triangle"></use>
                     </svg></span></li>
                 <li class="navbar__menu-item"> <a href="story.html">История</a></li>
-                <li class="navbar__menu-item"> <a href="#">Руководство</a></li>
+                <li class="navbar__menu-item"> <a href="leadership.html">Руководство</a></li>
                 <li class="navbar__menu-item"> <span>Центры компетенции
                     <svg>
                       <use href="img/sprites/sprite.svg#triangle"></use>
                     </svg></span>
                   <ul class="navbar__submenu-list">
-                    <li class="navbar__submenu-item"><a href="#">Центр ГМСН и РР</a></li>
-                    <li class="navbar__submenu-item"><a href="#">Центр ОМСН</a></li>
-                    <li class="navbar__submenu-item"><a href="#">Центр СГР</a></li>
+                    <li class="navbar__submenu-item"><a href="center-gmsn.html">Центр ГМСН и РР</a></li>
+                    <li class="navbar__submenu-item"><a href="center-omsn.html">Центр ОМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="center-sgr.html">Центр СГР</a></li>
                   </ul>
                 </li>
                 <li class="navbar__menu-item"> <span>Закупки
@@ -63,23 +63,23 @@
             <li class="navbar__item"><a href="#">Терретория присутствия</a></li>
             <li class="navbar__item"><span>пресс-центр</span>
               <ul class="navbar__menu-list">
-                <li class="navbar__menu-item"> <span>События
+                <li class="navbar__menu-item"> <a href="events.html">События
                     <svg>
                       <use href="img/sprites/sprite.svg#triangle"></use>
-                    </svg></span>
+                    </svg></a>
                   <ul class="navbar__submenu-list">
-                    <li class="navbar__submenu-item"><a href="#">Новости компании</a></li>
-                    <li class="navbar__submenu-item"><a href="#">Новости отрасли</a></li>
+                    <li class="navbar__submenu-item"><a href="events-company.html">Новости компании</a></li>
+                    <li class="navbar__submenu-item"><a href="events-branch.html">Новости отрасли</a></li>
                   </ul>
                 </li>
-                <li class="navbar__menu-item"> <span>Медиатека
+                <li class="navbar__menu-item"> <a href="mediateka.html">Медиатека
                     <svg>
                       <use href="img/sprites/sprite.svg#triangle"></use>
-                    </svg></span>
+                    </svg></a>
                   <ul class="navbar__submenu-list">
-                    <li class="navbar__submenu-item"><a href="#">Фотогалерея</a></li>
-                    <li class="navbar__submenu-item"><a href="#">Видеогалерея</a></li>
-                    <li class="navbar__submenu-item"><a href="#">Фирменный стиль</a></li>
+                    <li class="navbar__submenu-item"><a href="media-photo.html">Фотогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="media-video.html">Видеогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="media-style.html">Фирменный стиль</a></li>
                   </ul>
                 </li>
                 <li class="navbar__menu-item"> <a href="#">Контакты для СМИ</a></li>
@@ -119,20 +119,49 @@
         </div>
       </div>
     </header>
-    <main class="bg-img bg-img-w">
+    <main class="bg-img bg-img-g">
       <div class="breads">
         <div class="container">
           <ul>
             <li><a href="index.html">Главная</a><span>/</span></li>
             <li><a href="#">О Гидроспецгеологии</a><span>/</span></li>
-            <li><span>Миссия</span></li>
+            <li><span>Руководство</span></li>
           </ul>
         </div>
       </div>
-      <article class="mission">
+      <article class="leadership">
         <div class="container">
-          <h1 class="title-h2">Миссия ФГБУ «Гидроспецгеология»</h1>
-          <p>Миссия ФГБУ «Гидроспецгеология» - получение достоверной геологической и геоэкологической информации для удовлетворения потребностей Федерального агентства по недропользованию, Министерства обороны РФ, Госкорпорации «Росатом» и других заказчиков.</p>
+          <h1 class="title-h2">Руководство</h1>
+          <ul class="leadership__row">
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="annenkov"><span class="leadership__card-img"><img src="img/leadership/annenkov.jpg" alt="Фотография руководителя"></span><b>Анненков Анатолий Алексеевич</b><span>генеральный директор</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="taranovskiy"><span class="leadership__card-img"><img src="img/leadership/taranovskiy.jpg" alt="Фотография руководителя"></span><b>Тарановский Анатолий Владимирович</b><span>заместитель генерального директора по использованию федеральной собственности и кадрам</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="spektor"><span class="leadership__card-img"><img src="img/leadership/spektor.jpg" alt="Фотография руководителя"></span><b>Спектор Сергей Владимирович</b><span>заместитель генерального директора, директор Центра ГМСН и регламентных работ</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="chesalov"><span class="leadership__card-img"><img src="img/leadership/chesalov.jpg" alt="Фотография руководителя"></span><b>Чесалов Леонид Евгеньевич</b><span>заместитель генерального директора по информационным технологиям и защите информации</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="mokina"><span class="leadership__card-img"><img src="img/leadership/mokina.jpg" alt="Фотография руководителя"></span><b>Мокина Ольга Юрьевна</b><span>главный бухгалтер</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="glagolev"><span class="leadership__card-img"><img src="img/leadership/glagolev.jpg" alt="Фотография руководителя"></span><b>Глаголев Андрей Всеволодович</b><span>заместитель генерального директора по производству</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="volosenko"><span class="leadership__card-img"><img src="img/leadership/volosenko.jpg" alt="Фотография руководителя"></span><b>Волосенко Сергей Иванович</b><span>директор Центра СГР</span></button>
+                  </li>
+                  <li class="leadership__card">
+                    <button class="modal-leader" data-modal="svyatovec"><span class="leadership__card-img"><img src="img/leadership/svyatovec.jpg" alt="Фотография руководителя"></span><b>Святовец Сергей Владимирович</b><span>директор Центра ОМСН</span></button>
+                  </li>
+            <li class="leadership__card-empty"></li>
+            <li class="leadership__card-empty"></li>
+            <li class="leadership__card-empty"></li>
+          </ul>
+          <div class="leadership__bottom"><span>Сведения о доходах и расходах за 2019 г.</span><a href="#">Сведения о доходах, расходах, об имуществе и обязательствах имущественного характера руководителей</a></div>
         </div>
       </article>
     </main>
@@ -184,7 +213,7 @@
         <button class="btn">Согласен</button>
       </div>
     </div>
-    <script src="./js/vendor.min.js"></script>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/vendor.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
