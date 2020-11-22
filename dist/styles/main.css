@@ -1689,6 +1689,69 @@ small {
   margin: 15px;
 }
 
+.shopping {
+  padding-bottom: 40px;
+}
+
+.shopping .title-h2 {
+  margin-bottom: 35px;
+}
+
+.shopping p {
+  margin: 25px 0;
+  line-height: 1.5;
+}
+
+.shopping p a {
+  color: #3167af;
+  text-decoration: underline;
+}
+
+.shopping p a:hover {
+  text-decoration: none;
+}
+
+.shopping__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 575px;
+  margin: 25px 0;
+  border: 1px solid #adadc0;
+  padding: 9px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+.shopping__link:hover span {
+  text-decoration: none;
+}
+
+.shopping__link span {
+  color: #3167af;
+  text-decoration: underline;
+}
+
+.shopping__link-img {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.shopping__link-img img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .story {
   padding-bottom: 40px;
 }
