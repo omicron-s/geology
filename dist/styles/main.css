@@ -2537,6 +2537,8 @@ small {
 
 .media-card:hover {
   color: #3469ad;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .media-card[data-filter="video"] .media-card__img b {
