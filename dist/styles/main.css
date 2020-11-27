@@ -1585,8 +1585,8 @@ small {
 
 .media__button {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 410px;
-  flex: 0 0 410px;
+  -ms-flex: 0 1 410px;
+  flex: 0 1 410px;
   position: relative;
   bottom: 0;
   height: 180px;
