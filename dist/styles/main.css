@@ -1241,6 +1241,8 @@ small {
 .centers__card:hover {
   background-color: #3167af;
   color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .centers__card:hover b {
