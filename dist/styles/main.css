@@ -1046,6 +1046,8 @@ small {
 .acts__link:hover {
   border-color: #3167af;
   color: #3167af;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .acts__link-img {
@@ -1870,6 +1872,8 @@ small {
 .production__link:hover {
   border-color: #3167af;
   color: #3167af;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .production__item-img {
