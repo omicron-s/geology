@@ -1566,6 +1566,10 @@ small {
   color: #3167af;
 }
 
+.leadership__bottom a:hover {
+  text-decoration: none;
+}
+
 .map .title-h2 {
   margin-bottom: 35px;
 }
