@@ -2739,11 +2739,6 @@ small {
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 12px;
-  /* для теста */
-}
-
-.footer__mid a {
-  text-decoration: underline;
 }
 
 .footer__right {
@@ -2860,9 +2855,21 @@ small {
 }
 
 .footer__copyright a,
+.footer__copyright button,
 .footer__list a,
-.footer__mid a {
+.footer__list button,
+.footer__mid a,
+.footer__mid button {
   text-decoration: underline;
+}
+
+.footer__copyright a:hover,
+.footer__copyright button:hover,
+.footer__list a:hover,
+.footer__list button:hover,
+.footer__mid a:hover,
+.footer__mid button:hover {
+  text-decoration: none;
 }
 
 .footer__bottom {
