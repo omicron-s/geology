@@ -155,6 +155,39 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../views/layouts/header/header.js":
+/*!*****************************************!*\
+  !*** ../views/layouts/header/header.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var header = $('.navbar');
+  /* Появление шапки при скролле вниз после половины экрана */
+
+  $(window).on('scroll resize', function () {
+    if ($(window).scrollTop() > window.innerHeight / 2) {
+      header.addClass('fixed');
+      $('body').css('padding-top', header.height());
+    }
+
+    if ($(window).scrollTop() <= 0) {
+      header.removeClass('fixed');
+      $('body').css('padding-top', 0);
+    }
+  });
+  /* Появление поиска по клику */
+
+  $('#search button').on('click', function () {
+    $('.navbar__search').toggleClass('show');
+  });
+});
+
+/***/ }),
+
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -168,17 +201,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! focus-visible/dist/focus-visible.min */ "../../node_modules/focus-visible/dist/focus-visible.min.js");
 /* harmony import */ var focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _layouts_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @layouts/header/header */ "../views/layouts/header/header.js");
 
-global.$ = jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default.a;
-
-// import 'core-js/stable/array/for-each';
+global.$ = jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default.a; // import 'core-js/stable/array/for-each';
 // import 'core-js/stable/array/includes';
 // import 'core-js/stable/dom-collections/for-each';
 
-/*!полифил для :focus-visible*/
+/* полифил для :focus-visible */
 
 
-// import modal from '@layouts/modal/modal';
+ // import modal from '@layouts/modal/modal';
 // import scrollUp from '@components/scroll-up/scroll-up';
 // import header from '@layouts/header/header';
 // import navbar from '@blocks/navbar/navbar';
@@ -190,14 +222,15 @@ global.$ = jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default.a;
 // import tableBtn from '@blocks/product-table/product-table';
 // import productGoods from '@blocks/product-goods/product-goods';
 // import regions from '@blocks/regions/regions';
-
-
 // import svg4everybody from 'svg4everybody/dist/svg4everybody.min';
 // $(() => {
 //   svg4everybody();
 //   $('svg').attr('focusable', 'false');
 // });
 
+jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  Object(_layouts_header_header__WEBPACK_IMPORTED_MODULE_2__["default"])();
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "../../node_modules/webpack/buildin/global.js")))
 
 /***/ })

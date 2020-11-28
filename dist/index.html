@@ -9,7 +9,276 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <main></main>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar__list">
+            <li class="navbar__item"><span>О гидроспецгеологии</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <a href="mission.html">Миссия</a></li>
+                <li class="navbar__menu-item"> <a href="activity.html">Деятельность
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></a></li>
+                <li class="navbar__menu-item"> <a href="story.html">История</a></li>
+                <li class="navbar__menu-item"> <a href="leadership.html">Руководство</a></li>
+                <li class="navbar__menu-item"> <span>Центры компетенции
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="center-gmsn.html">Центр ГМСН и РР</a></li>
+                    <li class="navbar__submenu-item"><a href="center-omsn.html">Центр ОМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="center-sgr.html">Центр СГР</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="shopping.html">Закупки
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></a></li>
+                <li class="navbar__menu-item"> <a href="#">Ведомости результатов проведения СОУТ</a></li>
+                <li class="navbar__menu-item"> <a href="#">Структура</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><span>Мониторинг состояния недр</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <span>Государственный мониторинг недр (ГМСН)
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></span>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="production-gmsn.html">Регламентная продукция Центра ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="production-info-rf.html">Информационный бюллетень о состоянии недр на территории РФ</a></li>
+                    <li class="navbar__submenu-item"><a href="production-info.html">Информационные бюллетени о состоянии недр федеральных округов</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Интерактивная карта ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Макет програмного модуля ИАС ГМСН</a></li>
+                    <li class="navbar__submenu-item"><a href="#">Система сбора и накопления данных ГГД-поля</a></li>
+                    <li class="navbar__submenu-item"><a href="acts.html">Нормативно-правовые акты ведения государственного мониторинга состояния недр</a></li>
+                    <li class="navbar__submenu-item"><a href="map-filming.html">Средне и мелкомасштабная съемки</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="#">Объектный мониторинг состояния недр (ОМСН)</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a href="#">Терретория присутствия</a></li>
+            <li class="navbar__item"><span>пресс-центр</span>
+              <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"> <a href="events.html">События
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></a>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="events-company.html">Новости компании</a></li>
+                    <li class="navbar__submenu-item"><a href="events-branch.html">Новости отрасли</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="mediateka.html">Медиатека
+                    <svg>
+                      <use href="img/sprites/sprite.svg#triangle"></use>
+                    </svg></a>
+                  <ul class="navbar__submenu-list">
+                    <li class="navbar__submenu-item"><a href="media-photo.html">Фотогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="media-video.html">Видеогалерея</a></li>
+                    <li class="navbar__submenu-item"><a href="media-style.html">Фирменный стиль</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-item"> <a href="#">Контакты для СМИ</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a href="contacts.html">Контакты</a></li>
+            <li class="navbar__item" id="search">
+              <button> 
+                <svg>
+                  <use href="img/sprites/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="navbar__search">
+            <input type="text" required>
+            <button class="btn">Найти</button><span>
+              <svg>
+                <use href="img/sprites/sprite.svg#search"></use>
+              </svg></span>
+          </div>
+        </div>
+      </nav>
+      <div class="header__row">
+        <div class="container"><a class="logo" href="index.html"> <img src="img/logo/logo.png" alt="Логотип сайта" title="ГидроСпецГеология"><b>Гидроспецгеология</b></a>
+          <div class="header__links"><a href="#">
+              <div class="header__links-img"><img src="img/header/karta.png" alt="Карта РФ"></div><b>Территория <br> присутствия</b></a><a href="#">
+              <div class="header__links-img"><img src="img/header/kaplya.png" alt="Капля воды"></div><b>виды <br> деятельности</b></a></div>
+          <div class="header__victory"><img src="img/header/75let.png" alt="75 лет. Победа 1945-2020" title="75 лет победе над фашизмом!"></div>
+          <div class="header__contacts"><a href="#" title="Instagram">
+              <svg>
+                <use href="img/sprites/sprite.svg#i-instagram"></use>
+              </svg></a><a href="#" title="Facebook">
+              <svg>
+                <use href="img/sprites/sprite.svg#i-facebook"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="types">
+        <div class="container">
+          <h2 class="title-h2">Виды деятельности</h2>
+          <div class="types__card-wrapper"><a class="types-card" href="#">
+                    <div class="types-card__img"><img src="img/types/1.jpg" alt="Журнал продукции"></div>
+                    <div class="types-card__text"><span>Регламентная продукция ГМСН</span><small> <small>Подробнее </small><img src="img/icons/arrow.svg" alt=""></small></div></a><a class="types-card" href="#">
+                    <div class="types-card__img"><img src="img/types/2.jpg" alt="За монитором работник"></div>
+                    <div class="types-card__text"><span>Интерактивная карта ГМСН </span><small> <small>Подробнее </small><img src="img/icons/arrow.svg" alt=""></small></div></a><a class="types-card" href="#">
+                    <div class="types-card__img"><img src="img/types/3.jpg" alt="За монитором работник"></div>
+                    <div class="types-card__text"><span>Макет программного модуля ИАС ГМСН</span><small> <small>Подробнее </small><img src="img/icons/arrow.svg" alt=""></small></div></a><a class="types-card" href="#">
+                    <div class="types-card__img"><img src="img/types/4.jpg" alt="На мониторе Apple карта РФ"></div>
+                    <div class="types-card__text"><span>Средне и мелкомасштабная съемки</span><small> <small>Подробнее </small><img src="img/icons/arrow.svg" alt=""></small></div></a>
+          </div>
+        </div>
+      </section>
+      <section class="events-block">
+        <div class="container">
+          <h2 class="title-h2">События</h2>
+          <div class="buttons-swap">
+            <button disabled="disabled">Новости компании</button>
+            <button>Новости отрасли</button>
+          </div>
+          <div class="media-card-wrapper"><a class="media-card" href="#" data-media="">
+              <div class="media-card__img"><img src="img/media/1.jpg" alt="Водопад"/>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="">
+              <div class="media-card__img"><img src="img/media/2.jpg" alt="Водопад"/>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="">
+              <div class="media-card__img"><img src="img/media/3.jpg" alt="Водопад"/>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="">
+              <div class="media-card__img"><img src="img/media/4.jpg" alt="Водопад"/>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title-h2">ключевые показатели</h2>
+          <div class="advantages-wrapper">
+                  <div class="advantages__block">
+                    <div class="advantages__round" id="adv1">
+                      <svg viewBox="0 0 42 42">
+                        <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
+                        <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
+                      </svg><b>23</b>
+                    </div><span>Количество наблюдательных пунктов</span>
+                  </div>
+                  <div class="advantages__block">
+                    <div class="advantages__round" id="adv2">
+                      <svg viewBox="0 0 42 42">
+                        <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
+                        <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
+                      </svg><b>121</b>
+                    </div><span>Подготовленная <br> отчетность</span>
+                  </div>
+                  <div class="advantages__block">
+                    <div class="advantages__round" id="adv3">
+                      <svg viewBox="0 0 42 42">
+                        <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
+                        <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
+                      </svg><b>43</b>
+                    </div><span>км<sup>2</sup> заснятой <br> территории</span>
+                  </div>
+                  <div class="advantages__block">
+                    <div class="advantages__round" id="adv4">
+                      <svg viewBox="0 0 42 42">
+                        <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
+                        <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
+                      </svg><b>82</b>
+                    </div><span>Количество локальных <br> объектов</span>
+                  </div>
+                  <div class="advantages__block">
+                    <div class="advantages__round" id="adv5">
+                      <svg viewBox="0 0 42 42">
+                        <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
+                        <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
+                      </svg><b>85</b>
+                    </div><span>Количество <br> моделей</span>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="zones">
+        <div class="container">
+          <h2 class="title-h2">Территория присутствия</h2>
+          <div class="zones__map">
+            <div class="zones__img"><img src="img/zones/bg.png" alt="Карта РФ"></div>
+            <ul class="zones__list">
+              <li class="zones__item" id="zonesR1">
+                <button></button><a href="#">Гидрогеологическая экспедиция 29 района</a>
+              </li>
+              <li class="zones__item" id="zonesR2">
+                <button></button><a href="#">Гидрогеологическая экспедиция №30</a>
+              </li>
+              <li class="zones__item" id="zonesR3">
+                <button></button>
+                <ul>
+                  <li><a href="#">Центр ГМСН</a></li>
+                  <li><a href="#">Центр ОМСН</a></li>
+                  <li><a href="#">Центр СГР</a></li>
+                </ul>
+              </li>
+              <li class="zones__item" id="zonesR3-1"><span>Головное подразделение</span></li>
+              <li class="zones__item" id="zonesR4">
+                <button></button><a href="#">Гидрогеологическая экспедиция 29 района</a>
+              </li>
+              <li class="zones__item" id="zonesR5">
+                <button></button><a href="#">Приволжский региональный центр ГМСН</a>
+              </li>
+              <li class="zones__item" id="zonesR6">
+                <button></button><a href="#">Гидрогеологическая экспедиция №25 Северск</a>
+              </li>
+              <li class="zones__item" id="zonesR7">
+                <button></button><a href="#">Сибирский региональный центр ГМСН</a>
+              </li>
+              <li class="zones__item" id="zonesR8">
+                <button></button><a href="#">Дальневосточный центр ГМСН Хабаровск</a>
+              </li>
+              <li class="zones__item" id="zonesR9">
+                <button></button><a href="#">Гидрогеологическая экспедиция 15 района</a>
+              </li>
+              <li class="zones__item" id="zonesR10">
+                <button></button><a href="#">Гидрогеологическая экспедиция 4 района Уссурийск</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="events-block">
+        <div class="container">
+          <h2 class="title-h2">Медиатека</h2>
+          <div class="buttons-swap">
+            <button disabled="disabled">Фотогалерея</button>
+            <button>Видеогалерея</button>
+          </div>
+          <div class="media-card-wrapper"><a class="media-card" href="#" data-media="video">
+              <div class="media-card__img"><img src="img/media/1.jpg" alt="Водопад"/>
+                <div class="media-card__video"><img src="img/icons/youtube.svg" alt=""/></div>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="video">
+              <div class="media-card__img"><img src="img/media/2.jpg" alt="Водопад"/>
+                <div class="media-card__video"><img src="img/icons/youtube.svg" alt=""/></div>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="video">
+              <div class="media-card__img"><img src="img/media/3.jpg" alt="Водопад"/>
+                <div class="media-card__video"><img src="img/icons/youtube.svg" alt=""/></div>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a><a class="media-card" href="#" data-media="video">
+              <div class="media-card__img"><img src="img/media/4.jpg" alt="Водопад"/>
+                <div class="media-card__video"><img src="img/icons/youtube.svg" alt=""/></div>
+              </div>
+              <div class="media-card__text"><span>В Москве состоится Всероссийский форум-выставка «НЕДРА 2020. Изучение. Разведка....</span></div></a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__left"><a class="logo" href="index.html"><img src="img/logo/logo-w.png" alt="Логотип сайта" title="ГидроСпецГеология"></a>
