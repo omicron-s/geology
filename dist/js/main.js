@@ -164,11 +164,14 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.find */ "../../node_modules/core-js/modules/es.array.find.js");
+/* harmony import */ var core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_find__WEBPACK_IMPORTED_MODULE_0__);
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var header = $('.navbar');
   /* Появление шапки при скролле вниз после половины экрана */
 
-  $(window).on('scroll resize', function () {
+  $(window).on('scroll resize load', function () {
     if ($(window).scrollTop() > window.innerHeight / 2) {
       header.addClass('fixed');
       $('body').css('padding-top', header.height());
@@ -181,8 +184,22 @@ __webpack_require__.r(__webpack_exports__);
   });
   /* Появление поиска по клику */
 
-  $('#search button').on('click', function () {
+  $('#search button, .header__button--search').on('click', function () {
     $('.navbar__search').toggleClass('show');
+    $('.navbar__list, .header__links, .header__victory, .header__contacts').toggleClass('open-search');
+  });
+  /* Появление меню по кнопке */
+
+  $('.header__button--menu').on('click', function () {
+    var expanded = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', !expanded);
+    $(this).find('.btn-burger').toggleClass('open');
+    $('html, .header, .navbar__list, .header__links, .header__victory, .header__contacts').toggleClass('open');
+  });
+  /* Подменю */
+
+  $('.navbar__item-button').on('click', function () {
+    $(this).parent('li').toggleClass('show');
   });
 });
 
