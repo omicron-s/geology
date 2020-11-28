@@ -155,6 +155,154 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../views/blocks/banner/banner.js":
+/*!****************************************!*\
+  !*** ../views/blocks/banner/banner.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../../node_modules/swiper/swiper.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_0__["Pagination"]]);
+  var bannerSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.banner .swiper-container', {
+    slidesPerView: 1,
+    speed: 800,
+    spaceBetween: 0,
+    // centeredSlides: true,
+    navigation: {
+      nextEl: '.banner .swiper-button-next',
+      prevEl: '.banner .swiper-button-prev'
+    },
+    pagination: {
+      el: '.banner .swiper-pagination',
+      clickable: true
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "../views/blocks/events-block/events-block.js":
+/*!****************************************************!*\
+  !*** ../views/blocks/events-block/events-block.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../../node_modules/swiper/swiper.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  /* slider */
+  swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"]]);
+  var eventsSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.events-block .swiper-container', {
+    slidesPerView: 1,
+    speed: 500,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    // centeredSlides: true,
+    navigation: {
+      nextEl: '.events-block .swiper-button-next',
+      prevEl: '.events-block .swiper-button-prev'
+    },
+    breakpoints: {
+      // when window width is >= 540px
+      540: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 30
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 0
+      },
+      // when window width is >= 1200px
+      1290: {
+        slidesPerView: 4,
+        centeredSlides: false,
+        spaceBetween: 0
+      }
+    }
+  });
+  /* Переключение вкладок*/
+
+  $('.buttons-swap').on('click', 'button', function () {
+    $(this).siblings('button').removeAttr('disabled');
+    $(this).attr('disabled', 'disabled');
+  });
+});
+
+/***/ }),
+
+/***/ "../views/blocks/types/types.js":
+/*!**************************************!*\
+  !*** ../views/blocks/types/types.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../../node_modules/swiper/swiper.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__["Navigation"]]);
+  var typesSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.types .swiper-container', {
+    slidesPerView: 1,
+    speed: 500,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    // centeredSlides: true,
+    navigation: {
+      nextEl: '.types .swiper-button-next',
+      prevEl: '.types .swiper-button-prev'
+    },
+    breakpoints: {
+      // when window width is >= 540px
+      540: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 30
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 0
+      },
+      // when window width is >= 1200px
+      1290: {
+        slidesPerView: 4,
+        centeredSlides: false,
+        spaceBetween: 0
+      }
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "../views/layouts/header/header.js":
 /*!*****************************************!*\
   !*** ../views/layouts/header/header.js ***!
@@ -219,12 +367,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! focus-visible/dist/focus-visible.min */ "../../node_modules/focus-visible/dist/focus-visible.min.js");
 /* harmony import */ var focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(focus_visible_dist_focus_visible_min__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _layouts_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @layouts/header/header */ "../views/layouts/header/header.js");
+/* harmony import */ var _blocks_banner_banner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @blocks/banner/banner */ "../views/blocks/banner/banner.js");
+/* harmony import */ var _blocks_types_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @blocks/types/types */ "../views/blocks/types/types.js");
+/* harmony import */ var _blocks_events_block_events_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @blocks/events-block/events-block */ "../views/blocks/events-block/events-block.js");
 
 global.$ = jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default.a; // import 'core-js/stable/array/for-each';
 // import 'core-js/stable/array/includes';
 // import 'core-js/stable/dom-collections/for-each';
 
 /* полифил для :focus-visible */
+
+
+
 
 
  // import modal from '@layouts/modal/modal';
@@ -247,6 +401,9 @@ global.$ = jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default.a; // imp
 
 jquery_dist_jquery_min__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   Object(_layouts_header_header__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_blocks_banner_banner__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_blocks_types_types__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  Object(_blocks_events_block_events_block__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "../../node_modules/webpack/buildin/global.js")))
 
