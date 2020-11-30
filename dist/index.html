@@ -149,8 +149,7 @@
               <svg>
                 <use href="img/sprites/sprite.svg#i-facebook"></use>
               </svg></a></div>
-          <button class="header__button header__button--menu">
-            <div class="btn-burger" aria-expanded="false"><span class="top"></span><span class="mid"></span><span class="bot"></span></div>
+          <button class="header__button header__button--menu"><span class="btn-burger"><span class="top"></span><span class="mid"></span><span class="bot"></span></span>
           </button>
           <button class="header__button header__button--search">
             <svg>
@@ -160,6 +159,29 @@
         </div>
       </div>
     </header>
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/test/bg.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/test/bg.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/test/bg.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/test/bg.jpg" alt=""></div>
+        </div>
+        <div class="container">
+          <button class="swiper-button-prev">
+            <svg>
+              <use href="./img/sprites/sprite.svg#angle"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg>
+              <use href="./img/sprites/sprite.svg#angle"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <main>
       <section class="types">
         <div class="container">
@@ -239,44 +261,44 @@
         <div class="container">
           <h2 class="title-h2">ключевые показатели</h2>
           <div class="advantages-wrapper">
-                  <div class="advantages__block">
-                    <div class="advantages__round" id="adv1">
+                  <div class="advantages__block" data-advantages="1">
+                    <div class="advantages__round">
                       <svg viewBox="0 0 42 42">
                         <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
                         <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
-                      </svg><b>23</b>
+                      </svg><b data-value="23">0</b>
                     </div><span>Количество наблюдательных пунктов</span>
                   </div>
-                  <div class="advantages__block">
-                    <div class="advantages__round" id="adv2">
+                  <div class="advantages__block" data-advantages="2">
+                    <div class="advantages__round">
                       <svg viewBox="0 0 42 42">
                         <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
                         <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
-                      </svg><b>121</b>
+                      </svg><b data-value="121">0</b>
                     </div><span>Подготовленная <br> отчетность</span>
                   </div>
-                  <div class="advantages__block">
-                    <div class="advantages__round" id="adv3">
+                  <div class="advantages__block" data-advantages="3">
+                    <div class="advantages__round">
                       <svg viewBox="0 0 42 42">
                         <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
                         <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
-                      </svg><b>43</b>
+                      </svg><b data-value="43">0</b>
                     </div><span>км<sup>2</sup> заснятой <br> территории</span>
                   </div>
-                  <div class="advantages__block">
-                    <div class="advantages__round" id="adv4">
+                  <div class="advantages__block" data-advantages="4">
+                    <div class="advantages__round">
                       <svg viewBox="0 0 42 42">
                         <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
                         <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
-                      </svg><b>82</b>
+                      </svg><b data-value="82">0</b>
                     </div><span>Количество локальных <br> объектов</span>
                   </div>
-                  <div class="advantages__block">
-                    <div class="advantages__round" id="adv5">
+                  <div class="advantages__block" data-advantages="5">
+                    <div class="advantages__round">
                       <svg viewBox="0 0 42 42">
                         <circle class="advantages__c1" cx="21" cy="21" r="15.91549430918954"></circle>
                         <circle class="advantages__c2" cx="21" cy="21" r="15.91549430918954"></circle>
-                      </svg><b>85</b>
+                      </svg><b data-value="85">0</b>
                     </div><span>Количество <br> моделей</span>
                   </div>
           </div>
@@ -423,6 +445,11 @@
         <button class="btn">Согласен</button>
       </div>
     </div>
+    <button class="scroll-up">
+      <svg width="12" height="8">
+        <use class="scroll-up__arrow" href="./img/sprites/sprite.svg#angle"></use>
+      </svg>
+    </button>
     <script src="./js/vendor.js"></script>
     <script src="./js/main.js"></script>
   </body>
