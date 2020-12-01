@@ -2121,12 +2121,12 @@ small {
   border-radius: 20px;
 }
 
-.photos__empty {
+li.photos__empty {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 300px;
   flex: 1 1 300px;
   height: 0;
-  margin: 15px;
+  margin: 0 15px;
 }
 
 .production {
@@ -2410,9 +2410,9 @@ small {
   margin: auto;
 }
 
-.story__gallery--empty {
+li.story__gallery--empty {
   height: 0;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .types {
@@ -3861,6 +3861,10 @@ html.fixed .modal-overlay {
     flex: 1 1 100%;
   }
 
+  .media__button {
+    padding: 10px 15px;
+  }
+
   .story__tree p {
     font-size: 16px;
   }
@@ -4122,12 +4126,44 @@ html.fixed .modal-overlay {
     font-size: 12px;
   }
 
+  .events-gallery__text {
+    padding-bottom: 30px;
+  }
+
+  .events-gallery__right {
+    display: none;
+  }
+
+  .media__button {
+    height: auto;
+    margin: 0 5px;
+    padding: 10px 5px;
+  }
+
+  .media__button > small,
+  .media__button > img {
+    display: none;
+  }
+
+  .media__button b {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .media__button-img {
+    margin: 0 auto 15px;
+  }
+
   .modal__contacts {
     padding-bottom: 30px;
   }
 
+  .photos {
+    padding-bottom: 25px;
+  }
+
   .story {
-    padding-bottom: 0;
+    padding-bottom: 25px;
   }
 
   .story__tree li {
@@ -4240,6 +4276,22 @@ html.fixed .modal-overlay {
     margin: 0;
   }
 
+  .header__row .header__contacts {
+    position: absolute;
+    top: 198px;
+    left: -100%;
+    -webkit-transition: left 0.25s, margin-top 0.25s;
+    transition: left 0.25s, margin-top 0.25s;
+  }
+
+  .header__row .header__contacts.open {
+    left: 215px;
+  }
+
+  .header__row .header__contacts.open-search {
+    margin-top: 80px;
+  }
+
   .header__victory {
     position: absolute;
     z-index: -2;
@@ -4255,22 +4307,6 @@ html.fixed .modal-overlay {
   }
 
   .header__victory.open-search {
-    margin-top: 80px;
-  }
-
-  .header__contacts {
-    position: absolute;
-    top: 198px;
-    left: -100%;
-    -webkit-transition: left 0.25s, margin-top 0.25s;
-    transition: left 0.25s, margin-top 0.25s;
-  }
-
-  .header__contacts.open {
-    left: 215px;
-  }
-
-  .header__contacts.open-search {
     margin-top: 80px;
   }
 
