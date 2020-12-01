@@ -1056,10 +1056,18 @@ small {
   margin-bottom: 35px;
 }
 
+.activity__list-wrapper {
+  margin: 0 -15px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
 .activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  min-width: 990px;
   margin: -13px;
 }
 
@@ -1168,10 +1176,11 @@ small {
 }
 
 .activity__line {
-  width: 93.5%;
+  width: 92.5%;
+  min-width: 920px;
   height: 5px;
-  background-color: #3167af;
   margin: 5px 0;
+  background-color: #3167af;
 }
 
 .activity__list-up {
@@ -3846,6 +3855,18 @@ html.fixed .modal-overlay {
     overflow: hidden;
   }
 
+  .activity__list {
+    margin: -13px -5px;
+  }
+
+  .activity__item {
+    margin: 13px 5px 40px;
+  }
+
+  .activity__list-up .activity__item {
+    margin: 38px 5px 13px;
+  }
+
   .advantages__block span {
     font-size: 14px;
   }
@@ -4116,6 +4137,10 @@ html.fixed .modal-overlay {
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
+  }
+
+  .activity .title-h2 {
+    margin-bottom: 15px;
   }
 
   .banner {
