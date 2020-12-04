@@ -375,6 +375,9 @@ __webpack_require__.r(__webpack_exports__);
   $('.zones__item button').on('click', function () {
     $(this).siblings('a, ul').toggleClass('show');
   });
+  $('.zones__item a').on('click', function (e) {
+    e.preventDefault();
+  });
 });
 
 /***/ }),
@@ -496,8 +499,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   //функция close
   var modalClose = function modalClose() {
-    $('body, .header, .modal').css('padding-right', 0);
-    $('.header').css('right', 0);
+    $('body, .navbar, .modal').css('padding-right', 0);
+    $('.navbar').css('right', 0);
     $('.modal').removeClass('show');
     $('html').removeClass('fixed');
     focusUnlock();
@@ -541,7 +544,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   }); //открытие модального окна
 
-  $('button[data-modal]').on('click', function () {
+  $('button[data-modal], a[data-modal]').on('click', function () {
     var modalName = $(this).attr('data-modal');
     var body = $('body').width();
     var scrollWidth = window.innerWidth - body; // let headerTop = $('.header').outerHeight();
@@ -580,7 +583,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (scrollWidth > 0) {
       $('body, .modal').css('padding-right', scrollWidth);
-      $('.header').css('right', scrollWidth);
+      $('.navbar').css('right', scrollWidth);
     }
   }); //Отмена по кнопке "Закрыть" и по фону
 

@@ -895,6 +895,37 @@ small {
   margin: 0 5px;
 }
 
+/* .btn-close {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 12px;
+    height: 1px;
+    transition: $trans;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover, &:focus {
+    &::before, &::after {
+      background-color: rgba(0, 0, 0, 1);
+    }
+  }
+} */
+
 .btn-close {
   position: relative;
   width: 20px;
@@ -907,11 +938,11 @@ small {
   position: absolute;
   top: 10px;
   left: 4px;
-  width: 12px;
-  height: 1px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 20px;
+  height: 2px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background-color: #3167af;
 }
 
 .btn-close::before {
@@ -928,7 +959,7 @@ small {
 .btn-close:hover::after,
 .btn-close:focus::before,
 .btn-close:focus::after {
-  background-color: black;
+  background-color: #59afff;
 }
 
 .btn {
@@ -2086,6 +2117,47 @@ small {
 
 .modal-personal .modal__content li {
   margin-bottom: 15px;
+}
+
+.modal-zones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-zones .modal__content {
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.ie .modal-zones .modal__content {
+  width: auto;
+}
+
+.modal-zones ul {
+  color: #4f4f4f;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+.modal-zones a {
+  color: #3167af;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: underline;
+}
+
+.modal-zones a:hover {
+  color: #59afff;
+}
+
+.modal-zones__title {
+  font-size: 20px;
+  margin-bottom: 2em;
 }
 
 .photos {
@@ -3456,8 +3528,8 @@ li.story__gallery--empty {
 
 .navbar {
   z-index: 10;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .5s, right 0s;
+  transition: .5s, right 0s;
 }
 
 .navbar__list {
@@ -3974,8 +4046,8 @@ html.fixed .modal-overlay {
 @media (min-width: 1024px) {
   .navbar {
     top: -100%;
+    right: 0;
     left: 0;
-    width: 100%;
     background-color: #3167af;
   }
 
