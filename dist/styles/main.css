@@ -707,6 +707,14 @@ body {
   height: 100vh;
 }
 
+.ie body {
+  height: 100%;
+}
+
+.ie main {
+  height: 100%;
+}
+
 *,
 *:after,
 *:before {
@@ -1242,9 +1250,6 @@ small {
 }
 
 .acts__link {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 300px;
-  flex: 0 0 300px;
   width: 300px;
   min-height: 390px;
   margin: 15px;
@@ -1652,6 +1657,7 @@ small {
 }
 
 .contacts__right img {
+  max-width: 100%;
   margin: auto;
   border-radius: 20px;
 }
@@ -1805,6 +1811,7 @@ small {
 .leadership__card-img img {
   border-radius: 50%;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .leadership__card-empty {
@@ -2044,6 +2051,7 @@ small {
 }
 
 .modal__subtitle {
+  width: 100%;
   max-width: 550px;
   margin: 0 auto 20px;
   text-align: center;
@@ -2169,9 +2177,6 @@ li.photos__empty {
 }
 
 .production__link {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 300px;
-  flex: 0 0 300px;
   width: 300px;
   min-height: 470px;
   margin: 15px;
@@ -2196,6 +2201,10 @@ li.photos__empty {
 
 .production__item-img {
   margin-bottom: 20px;
+}
+
+.production__item-img img {
+  margin: 0 auto;
 }
 
 .shopping {
@@ -2385,13 +2394,18 @@ li.photos__empty {
 }
 
 .story__tree b {
-  /* fix для ie flex: 1 1 51%*/
   -webkit-box-flex: 0;
   -ms-flex: 0 1 45%;
   flex: 0 1 45%;
   margin-left: 40px;
   color: #3167af;
   font-size: 20px;
+}
+
+.ie .story__tree b {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 51%;
+  flex: 0 1 51%;
 }
 
 .story__gallery {
@@ -4445,9 +4459,10 @@ html.fixed .modal-overlay {
 
   .story__tree b {
     font-size: 16px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 50px;
+    /* для IE */
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50px !important;
+    flex: 0 0 50px !important;
     text-align: right;
     margin-left: 15px;
   }

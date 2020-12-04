@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
     <link rel="stylesheet" href="./styles/main.css">
+    <script>
+      var ua = window.navigator.userAgent.toLowerCase(), is_ie = (/trident/gi).test(ua) || (/msie/gi).test(ua);
+      if (is_ie) {
+      		document.documentElement.className += 'ie';
+      }
+      console.log(!is_ie);
+    </script>
   </head>
   <body>
     <header class="header">
