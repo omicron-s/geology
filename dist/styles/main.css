@@ -2618,6 +2618,12 @@ li.story__gallery--empty {
   opacity: 0;
   background-color: #3167af;
   color: #fff;
+  font-size: 13px;
+}
+
+.structure__item-hidden-text b {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .structure__line {
