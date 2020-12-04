@@ -2424,6 +2424,230 @@ li.story__gallery--empty {
   margin: 0 10px;
 }
 
+.structure .title-h2 {
+  margin-bottom: 45px;
+}
+
+.structure__table-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.structure__title {
+  position: relative;
+  width: 100%;
+  margin: 0 0 30px;
+  border: 1px solid #adadc0;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.structure__title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 5px;
+  height: 31px;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  background-color: #3167af;
+}
+
+.structure__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  padding-top: 21px;
+  padding-bottom: 40px;
+  margin: 0 -10px;
+}
+
+.structure__table::after,
+.structure__table::before {
+  content: "";
+  position: absolute;
+  background-color: #3167af;
+}
+
+.structure__table::after {
+  top: 0;
+  left: 870px;
+  width: 3px;
+  height: 809px;
+}
+
+.structure__table::before {
+  top: 0;
+  left: 107px;
+  width: 1093px;
+  height: 3px;
+}
+
+.structure__list:nth-last-child(-n+4) .structure__item-hidden-text {
+  right: -10px;
+  left: auto;
+}
+
+.structure__item {
+  position: relative;
+  width: 198px;
+  height: 210px;
+  margin: 0 10px 20px;
+  border: 1px solid #afafc2;
+  padding: 10px 13px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.structure__item:hover .structure__item-hidden-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.structure__item:last-child .structure__item-hidden-text {
+  top: auto;
+  bottom: -20px;
+  min-height: calc(100% + 40px);
+}
+
+.structure__item--lg {
+  height: 190px;
+}
+
+.structure__item--md {
+  height: 140px;
+}
+
+.structure__item--xs {
+  height: 75px;
+}
+
+.structure__item--sm {
+  height: 100px;
+}
+
+.structure__item--bordered {
+  border: 3px solid #3167af;
+}
+
+.structure__item--bordered::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  width: 12px;
+  height: 3px;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  background-color: #3167af;
+}
+
+.structure__item--bordered.left::after {
+  left: 100%;
+}
+
+.structure__item--bordered.right::after {
+  right: 100%;
+}
+
+.structure__item:first-child {
+  border: 3px solid #3167af !important;
+}
+
+.structure__item:first-child::after {
+  background-color: #3167af !important;
+}
+
+.structure__item:not(.structure__item--bordered)::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 3px;
+  height: 21px;
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px);
+  background-color: #bbbbcf;
+}
+
+.structure__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+.structure__item-text small {
+  margin-top: auto;
+}
+
+.structure__item-hidden-text {
+  position: absolute;
+  z-index: 3;
+  top: -20px;
+  bottom: -20px;
+  left: -10px;
+  width: 300px;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  border-radius: 20px;
+  opacity: 0;
+  background-color: #3167af;
+  color: #fff;
+}
+
+.structure__line {
+  position: absolute;
+  top: 120px;
+  left: 434px;
+  width: 3px;
+  height: 198px;
+  background-color: #bbbbcf;
+}
+
+.structure__line::after,
+.structure__line::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 3px;
+  background-color: #bbbbcf;
+}
+
+.structure__line::after {
+  right: 100%;
+  bottom: 0;
+}
+
+.structure__line::before {
+  top: 0;
+  left: 100%;
+}
+
 .types {
   padding: 40px 0 45px;
 }
